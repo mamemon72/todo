@@ -50,23 +50,23 @@ export default function Form() {
           >
             Sign in
           </button>
-
-          <button
-            className="active:scale-[.98] rounded-xl
+          <div className="mt-2 flex flex-col gap-y-4">
+            <button
+              className="active:scale-[.98] rounded-xl font-bold justify-center
                               active:duration-75 
                               hover:scale-[1.03]
-                              
-                              transition-all gap-2 border border-gray-300 px-4 py-2 hover:bg-gray-100 flex items-center"
-          >
-            <img src="google.png" alt="Google Logo" className="w-8 h-8" />
-            <span className="text-gray-700">Sign in with Google</span>
-          </button>
-        </div>
-        <div className="mt-8 flex justify-center items-center">
-          <p className="font-medium text-base">Don't have an account?</p>
-          <button className="text-violet-500 text-base font-medium ml-2">
-            Sing up
-          </button>
+                              transition-all flex items-center gap-2 border border-gray-300 px-4 py-2 hover:bg-gray-100"
+            >
+              <img src="google.png" alt="Google Logo" className="w-8 h-8" />
+              <span className="text-gray-700">Sign in with Google</span>
+            </button>
+          </div>
+          <div className="mt-8 flex justify-center items-center">
+            <p className="font-medium text-base">Don't have an account?</p>
+            <button className="text-violet-500 text-base font-medium ml-2">
+              Sing up
+            </button>
+          </div>
         </div>
       </div>
     </div>
